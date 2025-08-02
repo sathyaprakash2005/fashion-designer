@@ -1,0 +1,129 @@
+.ni-card{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+.night-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.night-card{
+    width: 260px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+}
+.night-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+  }
+.night-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+   .night-screen {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    animation: fadeIn 0.4s ease;
+  }
+  
+  .night-content {
+    text-align: center;
+    animation: zoomIn 0.4s ease;
+    background-color: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ni-img {
+    max-width: 300px;
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .night-title {
+    font-size: 28px;
+    color: #222;
+  }
+  
+  .night-desc {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+  }
+  
+  /* 🔁 Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  @keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.85); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  .ni-style-1{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+  }
+  .ni-style-2{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+  }
+  .ni-style-3{
+    position: absolute;
+    top: 130%;
+    left: 20%;
+  }
+  .ni-style-4{
+    position: absolute;
+    top: 130%;
+    left: 55%;
+  }
+  @media (max-width: 768px) {
+    .ni-card{
+        font-size: 50%;
+        left: 10%;
+    }
+    .ni-style-1{
+        top: 30%;
+        width: 50%;
+    }
+    .ni-style-2{
+        width: 50%;
+        top: 80%;
+        left: 20%;
+    }
+    .ni-style-3{
+        width: 50%;
+        
+    }
+    .ni-style-4{
+        width: 50%;
+        top: 180%;
+        left: 20%;
+    }
+    .ni-btn{
+      left: 30%;
+    }
+  }

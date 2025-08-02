@@ -1,0 +1,162 @@
+body.contact-bg {
+  background: linear-gradient(to right, #d0f4de, #fef9d7);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 0;
+}
+
+/* Contact Section Layout */
+.contact {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Left Column - Contact Info */
+.contact-colm {
+  flex: 1 1 40%;
+  color: #444;
+}
+
+.contact-colm h3 {
+  font-size: 1.8rem;
+  color: #0e3c67;
+  margin-bottom: 20px;
+}
+
+.contact-colm ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-colm ul li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.contact-colm ul li img {
+  width: 28px;
+}
+
+/* Right Column - Form */
+.contact-col {
+  flex: 1 1 50%;
+}
+
+.contact-col h3 {
+  font-size: 1.5rem;
+  color: #0e3c67;
+  margin-bottom: 20px;
+}
+
+.contact form input,
+.contact form textarea {
+  display: block;
+  width: 100%;
+  background: #f4f6fa;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #dcdcdc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+  border-color: #6a1b9a;
+  outline: none;
+}
+
+.contact form button {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact form button:hover {
+  background-color: #4a0072;
+}
+
+/* Extra Cards */
+.msg-card {
+  color: #6a1b9a;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.satt-card {
+  font-size: 1.1rem;
+  color: #000f38;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .contact-colm,
+  .contact-col {
+    flex: 1 1 100%;
+  }
+
+  .contact-colm h3,
+  .contact-col h3 {
+    text-align: center;
+  }
+
+  .contact-colm ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-colm ul li {
+  justify-content: flex-start;
+  font-size: 0.95rem;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+  gap: 10px;
+}
+
+.contact-colm ul li img {
+  width: 24px;
+  flex-shrink: 0;
+}
+
+
+  .msg-card {
+    text-align: center;
+    font-size: 0.85rem;
+  }
+
+  .satt-card {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .contact form button {
+    width: 100%;
+  }
+}

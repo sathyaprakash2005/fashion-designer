@@ -1,0 +1,520 @@
+
+
+body.service-bg {
+  background: linear-gradient(90deg, #0a0a0b, #3c3b3d);
+  background-size: cover;
+  min-height: 450vh;
+  margin: 0;
+  color: #ffffff;
+}
+
+  .ser-cart img{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 60%;
+    
+  }
+  .overlay{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    background-color: rgba(10, 1, 1, 0.4);
+    top: 0%;
+  }
+  .aari-cart{
+    background-color: #000007;
+    padding: 10%;
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    width: 1%;
+    height: 1%;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .aari-cart:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(215, 212, 212, 0.2);
+  }
+  .aari-cart h1{
+    position: absolute;
+    top: 27%;
+    left: 20%;
+    color: white;
+    font-size: 270%;
+  }
+  .aari_1-cart{
+    background-color: #000007;
+    padding: 10%;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    width: 1%;
+    height: 1%;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .aari_1-cart:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(215, 212, 212, 0.2);
+  }
+  .aari_1-cart h1{
+    position: absolute;
+    top: 32%;
+    left: 10%;
+    font-size: 270%;
+    color: white;
+  }
+  .aari_2-cart{
+    background-color: #000007;
+    padding: 10%;
+    position: absolute;
+    top: 80%;
+    left: 70%;
+    width: 1%;
+    height: 1%;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .aari_2-cart:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(215, 212, 212, 0.2);
+  }
+  .aari_2-cart h1{
+    position: absolute;
+    top: 27%;
+    left: 10%;
+    font-size: 270%;
+    color: white;
+  }
+  .aari_3-cart{
+    background-color: #000007;
+    padding: 10%;
+    position: absolute;
+    top: 130%;
+    left: 10%;
+    width: 1%;
+    height: 1%;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .aari_3-cart:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(215, 212, 212, 0.2);
+  }
+  .aari_3-cart h1{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 270%;
+    color: white;
+  }
+  .aari_4-cart{
+    background-color: #000007;
+    padding: 10%;
+    position: absolute;
+    top: 130%;
+    left: 40%;
+    width: 1%;
+    height: 1%;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .aari_4-cart:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(215, 212, 212, 0.2);
+  }
+  .aari_4-cart h1{
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    font-size: 270%;
+    color: white;
+  }
+  .aari_5-cart{
+    background-color: #000007;
+    padding: 10%;
+    position: absolute;
+    top: 130%;
+    left: 70%;
+    width: 1%;
+    height: 1%;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .aari_5-cart:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(215, 212, 212, 0.2);
+  }
+  .aari_5-cart h1{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 270%;
+    color: white;
+  }
+  .aari_6-cart{
+    background-color: #000007;
+    padding: 10%;
+    position: absolute;
+    top: 180%;
+    left: 10%;
+    width: 1%;
+    height: 1%;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .aari_6-cart:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(215, 212, 212, 0.2);
+  }
+  .aari_6-cart h1{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 270%;
+    color: white;
+  }
+  .aari_7-cart{
+    background-color: #000007;
+    padding: 10%;
+    position: absolute;
+    top: 180%;
+    left: 40%;
+    width: 1%;
+    height: 1%;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .aari_7-cart:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(215, 212, 212, 0.2);
+  }
+  .aari_7-cart h1{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 270%;
+    color: white;
+  }
+  .aari_8-cart{
+    background-color: #000007;
+    padding: 10%;
+    position: absolute;
+    top: 180%;
+    left: 70%;
+    width: 1%;
+    height: 1%;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .aari_8-cart:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(215, 212, 212, 0.2);
+  }
+  .aari_8-cart h1{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 270%;
+    color: white;
+  }
+  .aari_9-cart{
+    background-color: #000007;
+    padding: 10%;
+    position: absolute;
+    top: 230%;
+    left: 10%;
+    width: 1%;
+    height: 1%;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .aari_9-cart:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(215, 212, 212, 0.2);
+  }
+  .aari_9-cart h1{
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    font-size: 270%;
+    color: white;
+  }
+  .aari_10-cart{
+    background-color: #000007;
+    padding: 10%;
+    position: absolute;
+    top: 230%;
+    left: 40%;
+    width: 1%;
+    height: 1%;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .aari_10-cart:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(215, 212, 212, 0.2);
+  }
+  .aari_10-cart h1{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 270%;
+    color: white;
+  }
+  .aari_11-cart{
+    background-color: #000007;
+    padding: 10%;
+    position: absolute;
+    top: 230%;
+    left: 70%;
+    width: 1%;
+    height: 1%;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .aari_11-cart:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(215, 212, 212, 0.2);
+  }
+  .aari_11-cart h1{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 270%;
+    color: white;
+  }
+  .aari_12-cart{
+    background-color: #000007;
+    padding: 10%;
+    position: absolute;
+    top: 280%;
+    left: 40%;
+    width: 1%;
+    height: 1%;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .aari_12-cart:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(215, 212, 212, 0.2);
+  }
+  .aari_12-cart h1{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    font-size: 270%;
+    color: white;
+  }
+  
+  
+  /* 🖼️ Common card styles */
+  .aari-card {
+    width: 260px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .aari-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 📷 Card image */
+  .aari-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* 🔍 Overlay styles */
+  .aari-screen {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    animation: fadeIn 0.4s ease;
+  }
+  
+  .aari-content {
+    text-align: center;
+    animation: zoomIn 0.4s ease;
+    background-color: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .aari-img {
+    max-width: 300px;
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* 🔁 Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  
+  @keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.85); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  @media (max-width: 768px) {
+    .aari-wrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+  
+    .aari-card {
+      width: 90%;
+      max-width: 340px;
+    }
+  }
+  @media (max-width: 768px) {
+    .aari-cart{
+      width: 50%;
+      height: 20%;
+      left: 25%;
+      top: 70%;
+    }
+    .aari-cart h1{
+      top: 20%;
+        font-size: 200%;
+    }
+    .aari_1-cart{
+      width: 50%;
+      height: 20%;
+      left: 25%;
+      top: 100%;
+    }
+    .aari_1-cart h1{
+      top: 20%;
+        font-size: 200%;
+    }
+     .aari_2-cart{
+      width: 50%;
+      height: 20%;
+      left: 25%;
+      top: 130%;
+    }
+    .aari_2-cart h1{
+      font-size: 200%;
+      top: 10%;
+    }
+     .aari_3-cart{
+      width: 50%;
+      height: 20%;
+      left: 25%;
+      top: 160%;
+    }
+    .aari_3-cart h1{
+       font-size: 170%;
+      top: 10%;
+    }
+     .aari_4-cart{
+      width: 50%;
+      height: 20%;
+      left: 25%;
+      top: 190%;
+    }
+    .aari_4-cart h1{
+      font-size: 170%;
+      top: 10%;
+    }
+     .aari_5-cart{
+      width: 50%;
+      height: 20%;
+      left: 25%;
+      top: 220%;
+    }
+    .aari_5-cart h1{
+      font-size: 170%;
+      top: 10%;
+    }
+     .aari_6-cart{
+      width: 50%;
+      height: 20%;
+      left: 25%;
+      top: 250%;
+    }
+    .aari_6-cart h1{
+      font-size: 170%;
+      top: 10%;
+    }
+     .aari_7-cart{
+      width: 50%;
+      height: 20%;
+      left: 25%;
+      top: 280%;
+    }
+    .aari_7-cart h1{
+      font-size: 170%;
+      top: 10%;
+    }
+     .aari_8-cart{
+      width: 50%;
+      height: 20%;
+      left: 25%;
+      top: 310%;
+    }
+    .aari_8-cart h1{
+      font-size: 170%;
+      top: 10%;
+    }
+     .aari_9-cart{
+      width: 50%;
+      height: 20%;
+      left: 25%;
+      top: 340%;
+    }
+    .aari_9-cart h1{
+      font-size: 170%;
+      top: 10%;
+    }
+     .aari_10-cart{
+      width: 50%;
+      height: 20%;
+      left: 25%;
+      top: 370%;
+    }
+    .aari_10-cart h1{
+      font-size: 170%;
+      top: 10%;
+    }
+     .aari_11-cart{
+      width: 50%;
+      height: 20%;
+      left: 25%;
+      top: 400%;
+    }
+    .aari_11-cart h1{
+      font-size: 150%;
+      top: 10%;
+    }
+     .aari_12-cart{
+      width: 50%;
+      height: 20%;
+      left: 25%;
+      top: 430%;
+    }
+    .aari_12-cart h1{
+      font-size: 150%;
+      top: 10%;
+    }
+    
+  }
+  

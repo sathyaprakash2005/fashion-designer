@@ -1,0 +1,131 @@
+/* Container */
+.add-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Success Message */
+.success-message {
+  background-color: #ffff;
+  color: #155724;
+  border: 2px solid #c3e6cb;
+  padding: 40px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Camera Upload Button */
+.add-image-btn {
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background-color: #ffff;
+  border-radius: 15px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  border: 2px solid black;
+}
+
+.add-image-btn:hover {
+  background-color: #34a853;
+  border-color: white;
+  transform: scale(1.03);
+}
+
+.add-image-btn img {
+  width: 60px;
+  height: 60px;
+}
+
+
+.add-image-btn p {
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+.add-image-btn p:hover{
+  color:white;
+}
+
+/* Upload Preview */
+.upload-image {
+  margin-top: 20px;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  animation: fadeIn 0.6s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.upload-image:hover {
+  background-color: #f0f8ff;
+}
+
+.preview-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Upload Button */
+.upload-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #34a853;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #2c8d44;
+}
+
+/* Remove Note */
+.remove-note {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #888;
+  font-style: italic;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .add-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .preview-img {
+    max-height: 200px;
+  }
+}

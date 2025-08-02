@@ -1,0 +1,97 @@
+body .hero{
+  background-color: #022c22;
+  height: 100vh;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.3;
+  animation: colorchange 2s infinite;
+}
+@keyframes colorchange{
+  0%{
+    color: white;
+  }
+  50%{
+    color: #022c22;
+  }
+  100%{
+    color: #ccc;
+  }
+}
+
+.watch-button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.watch-button:hover {
+  background: white;
+  color: #022c22;
+}
+
+.hero-image img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  
+}
+@media (max-width: 768px) {
+  
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-image img{
+    width: 100%; 
+    height: 70vh; 
+    top: 10%;
+  }
+  .hero-content h1{
+    position: absolute;
+    top: 50%;
+    left: 29%;
+  }
+  .watch-button{
+    position: absolute;
+    top: 65%;
+    left: 29%;
+    color: #fefbfb;
+  }
+}
+
+@media (min-width: 769px) {
+  
+  .hero {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+  }
+
+  .hero-content {
+    position: absolute;
+    left: 10%;
+    max-width: 40%;
+  }
+
+  .hero-image {
+    max-width: 50%;
+  }
+}
+

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Manufacturing+Consent&family=Pacifico&display=swap');
+
+body{
+    background-color: white;
+}
+.sat-container img{
+    height: 100vh;
+    width: 100%;
+    border: 50px solid rgb(119, 112, 112);
+    border-radius: 30px;
+
+}
+.sat-container h1{
+      font-family: "Courgette", cursive;
+      font-size: 500%;
+    color: black;
+    position: absolute;
+    top:30%;
+    left: 10%;
+    animation: blinkColor 2s infinite;
+}
+
+@keyframes blinkColor {
+  0%   { color: white; }
+  25%  { color: transparent; }
+  50% {color:black;}
+  75% {color: transparent;} /* Hides text */
+  100% { color: white; }
+}
+.fr-btn{
+  background: #1e1e60;
+  padding: 10px;
+  border: 5px solid white;
+  border-radius: 30px;
+  width: 10%;
+  color: white;
+  position: absolute;
+  top: 70%;
+  left: 20%;
+   animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+.sat-container h2{
+     font-family: "Courgette", cursive;
+     font-size: 500%;
+    color: black;
+    position: absolute;
+    top:50%;
+    left: 10%;
+    animation: blinkColor 2s infinite;
+}
+.main-title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tagline {
+  font-size: 30px;
+  margin: 10px 0;
+  animation: fadeInUp 2s ease-in-out;
+  color: #ffeeee;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes backgroundShift {
+  0% {
+    background: linear-gradient(135deg, #1e1e60, #2a2a72);
+  }
+  100% {
+    background: linear-gradient(135deg, #3a0088, #930077);
+  }
+}
+.front-container {
+  height: 50vh;
+  width: 20%;
+  background: linear-gradient(135deg, #1e1e60, #2a2a72);
+  font-family: "Courgette", cursive;
+  border: 10px solid white;
+  border-radius: 30px;
+  color: white;
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  animation: backgroundShift 10s ease-in-out infinite alternate;
+}
+@media (max-width: 768px) {
+  .sat-container h1,
+  .sat-container h2{
+    font-size: 7vw;
+    
+  }
+
+  .front-container {
+    top: auto;
+    left: 50%;
+    bottom: 5%;
+    width: 90%;
+  }
+  .sat-container img{
+    border: 20px solid rgb(119, 112, 112);
+  }
+}
+
+@media (max-width: 480px) {
+  .sat-container h1 {
+    font-size: 20vw;
+    left: 25%;
+    top: 15%;
+  }
+  .sat-container h2{
+    font-size: 9vw;
+    top: 40%;
+  }
+
+  .main-title {
+    font-size: 1.5em;
+  }
+
+  .tagline {
+    font-size: 1em;
+  }
+
+  .front-container {
+    height: 30vh;
+    width: 60%;
+    position: absolute;
+    top: 60%;
+    left: 20%;
+  }
+  .fr-btn{
+    position: absolute;
+    top: 52%;
+    left: 40%;
+    width: 20%;
+  }
+}

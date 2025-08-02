@@ -1,0 +1,243 @@
+/* Page background */
+body.home-bg {
+  background: linear-gradient(135deg, #ffe6f0, #ffccf9);
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+.page-bg {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Header */
+.head-cart h1 {
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.2rem;
+  color: #6a1b9a;
+  background: #ffffffdd;
+  padding: 10px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Designer collection box */
+.home-cart {
+  position: absolute;
+  top: 15%;
+  left: 7%;
+  width: 85%;
+  background: linear-gradient(to bottom, #df1ccc, #a34cf0, #df1ccc);
+  padding: 10% 5%;
+  border-radius: 30px;
+  border: 8px solid white;
+  text-align: center;
+}
+
+.home-cart h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+
+/* Saree Image Section */
+.saree-cart img {
+  width: 25%;
+  height: auto;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Circular Menu */
+.menu {
+  position: absolute;
+  top: 38%;
+  left: 75%;
+  width: 200px;
+  height: 200px;
+}
+
+.toggle {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.eye-icon {
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease-in-out;
+}
+
+.eye-icon:hover {
+  transform: rotate(360deg);
+}
+
+/* Menu Container */
+.circular-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+.circular-menu.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Common style for menu items */
+.circular-menu li1,
+.circular-menu li2,
+.circular-menu li3,
+.circular-menu li4,
+.circular-menu .li1,
+.circular-menu .li2,
+.circular-menu .li3,
+.circular-menu .li4 {
+  position: absolute;
+  transform-origin: 0 0;
+  list-style: none;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+  font-weight: bold;
+  color: #6a1b9a;
+}
+
+.circular-menu .li1 {
+  top: -20%;
+  left: 30%;
+}
+
+.circular-menu .li2 {
+  top: 30%;
+  left: -24%;
+}
+
+.circular-menu .li3 {
+  top: -22%;
+  left: -100%;
+}
+
+.circular-menu .li4 {
+  top: -45%;
+  left: -20%;
+}
+
+.circular-menu .li1 img,
+.circular-menu .li2 img,
+.circular-menu .li3 img {
+  margin-top: 10px;
+  width: 40px;
+  height: auto;
+}
+
+/* Menu Animation (when active) */
+.circular-menu.show .li1 {
+  transform: rotate(0deg) translate(80px) rotate(0deg);
+}
+
+.circular-menu.show .li2 {
+  transform: rotate(90deg) translate(80px) rotate(-90deg);
+}
+
+.circular-menu.show .li3 {
+  transform: rotate(180deg) translate(80px) rotate(-180deg);
+}
+
+.circular-menu.show .li4 {
+  transform: rotate(270deg) translate(80px) rotate(-270deg);
+}
+
+@media (max-width: 768px) {
+  .head-cart h1 {
+    font-size: 1.2rem;
+    padding: 5px 15px;
+  }
+
+  .home-cart {
+    top: 20%;
+    padding: 20% 5%;
+    border-radius: 20px;
+  }
+
+  .home-cart h1 {
+    font-size: 1.5rem;
+  }
+
+  .saree-cart img {
+    top: 50%;
+    left: 30%;
+    width: 40%;
+  }
+
+  .menu {
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .eye-icon {
+    position: absolute;
+    top: 25%;
+    left: 39%;
+    width: 50px;
+  }
+
+  .circular-menu {
+    width: 180px;
+    height: 180px;
+    position: relative;
+  }
+
+.circular-menu .li1,
+  .circular-menu .li2,
+  .circular-menu .li3{
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+  .circular-menu .li4 {
+    padding: 30px 12px;
+  }
+
+  .circular-menu.show .li1 {
+    top: -65%;
+    left: 25%;
+    transform: scale(1);
+  }
+
+  .circular-menu.show .li2 {
+    top: -20%;
+    left: -20%;
+    transform: scale(1);
+  }
+
+  .circular-menu.show .li3 {
+    top: 35%;
+    left: 35%;
+    transform: scale(1);
+  }
+
+  .circular-menu.show .li4 {
+    top: -15%;
+    left: 85%;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,58 @@
+/* Footer1.css */
+
+.footer {
+  background-color: #111;
+  color: #eee;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 15px;
+  border-top: 50px solid #fff;
+  
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ddd;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  background-color: #222;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+/* Instagram button */
+.social-links a[aria-label="Instagram"] {
+  background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+/* WhatsApp button */
+.social-links a[aria-label="WhatsApp Group"] {
+  background-color: #25d366;
+}
+
+/* Hover effect for both */
+.social-links a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-color: #fff;
+}

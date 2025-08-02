@@ -1,0 +1,160 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL STYLES */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #022c22;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar-container {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  border: 4px solid white ;
+  border-radius:20px;
+}
+
+.navbar {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #022c22;
+  z-index: 10;
+  position: relative;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.logo span {
+  font-size: 1rem;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-icon {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+/* PHONE & RESERVATIONS */
+.phone {
+  white-space: nowrap;
+}
+
+.reservations {
+  white-space: nowrap;
+}
+
+.mobile-contact {
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
+.mobile-contact .reservations {
+  font-size: 0.9rem;
+  color: black;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.mobile-contact .phone {
+  font-size: 1.1rem;
+  color: black;
+  text-decoration: none;
+}
+
+
+/* HERO SECTION */
+
+
+/* DRAWER */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  z-index: 999;
+  animation: slideIn 0.3s ease forwards;
+}
+
+.drawer a {
+  margin: 1rem 0;
+  color: black;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.close-drawer {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  align-self: flex-end;
+  color: black;
+  cursor: pointer;
+}
+
+/* ANIMATION */
+@keyframes slideIn {
+  from {
+    right: -250px;
+  }
+  to {
+    right: 0;
+  }
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  
+}
+
+@media (min-width: 769px) {
+  .mobile {
+    display: none;
+  }
+
+  
+}
+
